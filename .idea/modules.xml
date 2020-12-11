@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GoogleArchitectureDemo-master.iml" filepath="$PROJECT_DIR$/.idea/modules/GoogleArchitectureDemo-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app_specific/GoogleArchitectureDemo-master.app_specific.iml" filepath="$PROJECT_DIR$/.idea/modules/app_specific/GoogleArchitectureDemo-master.app_specific.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app_universal/GoogleArchitectureDemo-master.app_universal.iml" filepath="$PROJECT_DIR$/.idea/modules/app_universal/GoogleArchitectureDemo-master.app_universal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib_common/GoogleArchitectureDemo-master.lib_common.iml" filepath="$PROJECT_DIR$/.idea/modules/lib_common/GoogleArchitectureDemo-master.lib_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib_coremodel/GoogleArchitectureDemo-master.lib_coremodel.iml" filepath="$PROJECT_DIR$/.idea/modules/lib_coremodel/GoogleArchitectureDemo-master.lib_coremodel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib_opensource/GoogleArchitectureDemo-master.lib_opensource.iml" filepath="$PROJECT_DIR$/.idea/modules/lib_opensource/GoogleArchitectureDemo-master.lib_opensource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_girls/GoogleArchitectureDemo-master.module_girls.iml" filepath="$PROJECT_DIR$/.idea/modules/module_girls/GoogleArchitectureDemo-master.module_girls.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_news/GoogleArchitectureDemo-master.module_news.iml" filepath="$PROJECT_DIR$/.idea/modules/module_news/GoogleArchitectureDemo-master.module_news.iml" />
+    </modules>
+  </component>
+</project>
