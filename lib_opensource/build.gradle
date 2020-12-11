@@ -33,7 +33,7 @@ android {
 dependencies {
 
     api fileTree(dir: 'libs', include: ['*.jar'])
-    testApi 'junit:junit:4.12'
+    testApi 'junit:junit:4.13.1'
     androidTestApi 'com.android.support.test:runner:1.0.1'
     androidTestApi 'com.android.support.test.espresso:espresso-core:3.0.1'
 
@@ -52,8 +52,8 @@ dependencies {
     annotationProcessor deps.room.compiler
 
     //fresco
-    api 'com.facebook.fresco:fresco:1.5.0'
-    api "com.facebook.fresco:imagepipeline-okhttp3:1.5.0"
+    api 'com.facebook.fresco:fresco:2.3.0'
+    api 'com.facebook.fresco:imagepipeline-okhttp3:2.3.0'
 
     // butterknife
     api deps.butterknife.runtime

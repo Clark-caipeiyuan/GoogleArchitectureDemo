@@ -36,7 +36,7 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation group: 'org.reactivestreams', name: 'reactive-streams', version: '1.0.0'
+    implementation group: 'org.reactivestreams', name: 'reactive-streams', version: '1.0.3'
     api project(':lib_opensource')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
