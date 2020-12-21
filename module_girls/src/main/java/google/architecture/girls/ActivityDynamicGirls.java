@@ -15,11 +15,9 @@ import com.alibaba.android.arouter.launcher.ARouter;
 
 import google.architecture.common.base.ARouterPath;
 import google.architecture.common.base.BaseActivity;
-import google.architecture.coremodel.datamodel.http.ApiConstants;
 import google.architecture.coremodel.datamodel.http.entities.GirlsData;
 import google.architecture.coremodel.viewmodel.BaseViewModel;
 import google.architecture.coremodel.viewmodel.DynamicGirlsViewModel;
-import google.architecture.coremodel.viewmodel.GirlsViewModel;
 import google.architecture.girls.databinding.ActivityGirlsBinding;
 
 /**

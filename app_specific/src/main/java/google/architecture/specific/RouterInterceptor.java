@@ -8,8 +8,6 @@ import com.alibaba.android.arouter.facade.annotation.Interceptor;
 import com.alibaba.android.arouter.facade.callback.InterceptorCallback;
 import com.alibaba.android.arouter.facade.template.IInterceptor;
 
-import google.architecture.common.base.ARouterPath;
-
 /**
  * Created by danxx on 2017/11/27.
  *

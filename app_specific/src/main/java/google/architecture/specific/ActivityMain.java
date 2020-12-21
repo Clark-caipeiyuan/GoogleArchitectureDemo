@@ -3,8 +3,6 @@ package google.architecture.specific;
 import android.databinding.DataBindingUtil;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -13,10 +11,8 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import java.util.ArrayList;
 import java.util.List;
 
-import google.architecture.common.base.ARouterPath;
 import google.architecture.common.base.BaseActivity;
 import google.architecture.common.base.BaseFragment;
-import google.architecture.common.util.BindingUtils;
 import google.architecture.common.widget.NoScrollViewPager;
 import google.architecture.specific.databinding.ActivityMainBinding;
 

@@ -2,10 +2,7 @@ package google.architecture.common.ui;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.Observer;
-import android.database.DatabaseUtils;
 import android.databinding.DataBindingUtil;
-import android.databinding.Observable;
-import android.databinding.ObservableField;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.Nullable;

@@ -2,5 +2,6 @@
     package="google.architecture.news">
     <application>
         <activity android:name=".ActivityNews"></activity>
+        <activity android:name=".ActivityNews2" />
     </application>
 </manifest>

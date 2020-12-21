@@ -5,6 +5,7 @@ import android.databinding.Bindable;
 
 import google.architecture.common.BR;
 
+
 /**
  * Created by Danxx on 2017/12/2.
  * 原始版支持双向绑定的数据

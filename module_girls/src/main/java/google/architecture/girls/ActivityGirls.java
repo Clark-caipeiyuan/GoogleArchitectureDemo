@@ -1,12 +1,9 @@
 package google.architecture.girls;
 
-import android.app.Activity;
 import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProvider;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -14,7 +11,6 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 
 import google.architecture.common.base.ARouterPath;
 import google.architecture.common.base.BaseActivity;
-import google.architecture.common.util.Utils;
 import google.architecture.coremodel.datamodel.http.entities.GirlsData;
 import google.architecture.coremodel.viewmodel.GirlsViewModel;
 import android.arch.lifecycle.ViewModelProviders;

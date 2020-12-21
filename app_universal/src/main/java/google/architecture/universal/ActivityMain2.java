@@ -7,6 +7,7 @@ import android.util.Log;
 
 import com.alibaba.android.arouter.facade.Postcard;
 import com.alibaba.android.arouter.facade.annotation.Autowired;
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.facade.callback.NavigationCallback;
 import com.alibaba.android.arouter.launcher.ARouter;
 
@@ -14,10 +15,11 @@ import google.architecture.common.base.ARouterPath;
 import google.architecture.common.base.BaseActivity;
 import google.architecture.common.service.TestService;
 import google.architecture.coremodel.viewmodel.GirlsViewModel;
-import google.architecture.universal.databinding.ActivityMainBinding;
+import google.architecture.universal.databinding.ActivityMain2Binding;
 
-public class ActivityMain extends BaseActivity {
-    ActivityMainBinding binding;
+@Route(path = ARouterPath.MainActivity2)
+public class ActivityMain2 extends BaseActivity {
+    ActivityMain2Binding binding;
 
     @Autowired(name = "/service/test")
     TestService testService1;
@@ -29,7 +31,7 @@ public class ActivityMain extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //注入才可以自动初始化Autowired注解声明的变量
-        ARouter.getInstance().inject(ActivityMain.this);
+        ARouter.getInstance().inject(ActivityMain2.this);
 
         testService1.sayHello("Autowired invoke 233");
 
@@ -41,7 +43,7 @@ public class ActivityMain extends BaseActivity {
 
         setTitle("UniversalApp_ActivityMain");
         Log.i("danxx", "onCreate onCreate");
-        binding = DataBindingUtil.setContentView(ActivityMain.this, R.layout.activity_main);
+        binding = DataBindingUtil.setContentView(ActivityMain2.this, R.layout.activity_main2);
         binding.setItemClick(itemClick);
 
     }
@@ -57,15 +59,15 @@ public class ActivityMain extends BaseActivity {
                             .build(ARouterPath.GirlsListAty)
                             /**可以针对性跳转跳转动画*/
                             .withTransition(R.anim.activity_up_in, R.anim.activity_up_out)
-                            .navigation(ActivityMain.this);
+                            .navigation(ActivityMain2.this);
                     break;
                 case R.id.toNews:
                     Log.i("danxx", "onClick toNews");
                     //跳转到NewsActivity
                     ARouter.getInstance()
-                            .build(ARouterPath.MainActivity2)
+                            .build(ARouterPath.NewsListAty)
                             .withTransition(R.anim.activity_up_in, R.anim.activity_up_out)
-                            .navigation(ActivityMain.this, 2, new NavigationCallback() {
+                            .navigation(ActivityMain2.this, 2, new NavigationCallback() {
                                 @Override
                                 public void onFound(Postcard postcard) {
                                     Log.i("danxx", "ARouter onFound 找到跳转匹配路径");
@@ -94,7 +96,7 @@ public class ActivityMain extends BaseActivity {
                             .build(ARouterPath.DynaGirlsListAty)
                             .withString("fullUrl", "http://gank.io/api/data/%E7%A6%8F%E5%88%A9/20/1")
                             .withTransition(R.anim.activity_up_in, R.anim.activity_up_out)
-                            .navigation(ActivityMain.this, 3);
+                            .navigation(ActivityMain2.this, 3);
                     break;
             }
         }
